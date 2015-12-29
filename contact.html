@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <title>Resume-Diana Pappe</title>
+  <link rel="stylesheet" media="screen" href="style.css"> 
+  <style>
+		body{
+			font-size:18px; 
+			font-family: verdana, Georgia, Serif;
+			background-image: url(contact.jpg), url(contact.jpg);
+			background-position: left center, right center;
+			background-repeat:no-repeat; no-repeat;
+			background-attachment: fixed, fixed; 
+			}
+		
+		.tablecontent5{
+		width:100%;
+		margin-top: 0;
+		}
+		
+		.tablecontent5 .content2{
+		width:40%;
+		margin-left: 5;
+		margin-right:50;
+		padding : 0 50 0 50;
+		}
+		
+		
+		tablecontent5 .content1{
+			width:30%;
+			margin-top: 0; 
+		}
+
+		tablecontent5 .content3{
+			width:30%;
+			margin-top: 0; 
+		}
+
+		
+		#frmContact{
+			font-size:18px; 
+			font-family: verdana, Georgia, Serif;
+			background-position: center center;
+			
+		}
+		
+		#frmContact input {
+			font-size:18px; 
+			font-family: verdana, Georgia, Serif
+		}
+		
+		#frmContact select{
+			font-size:18px; 
+			font-family: verdana, Georgia, Serif
+		}
+		
+
+		#frmContact textarea{
+			font-size:18px; 
+			font-family: verdana, Georgia, Serif
+		}
+		
+		legend{
+			font-weight:bold;
+		}
+		
+
+	</style>
+</head>
+
+<body>
+
+<header id="top" >
+
+	<img src = "banner.jpg" alt="Banner" style="width:100%;height:228px">
+
+	<nav >	
+		<table id="tablemenu1">
+			<tr >
+				<th ></th >
+				<th >
+					<a href="index.html">HOME</a>
+				</th >
+				<th >
+					<a href="accomplishments.html">ACCOMPLISHMENTS</a>
+				</th >
+				<th >
+					<a href="experience.html">EXPERIENCE</a>
+				</th >
+				<th >
+					<a href="skills.html">SKILLS</a>
+				</th >
+				<th >
+					<a href="education.html">EDUCATION</a>
+				</th >
+				<th >
+					<a href="about.html">ABOUT ME</a>
+				</th >
+				<th >
+					<a href="contact.html">CONTACT</a>
+				</th>
+				<th ></th >
+			</tr>
+		</table>
+	</nav>
+</header>
+
+
+
+
+<table class="tabletitle1">
+	<tr class="title1">
+		<th >
+        <p >&nbsp;
+			</p>
+			<p >
+				Diana Pappe
+			</p>
+		</th>
+	</tr>
+	<tr class="title2">
+		<th >
+			<p>
+				Software Developer / System Analyst 
+			</p>
+		</th>
+	</tr>
+</table>
+
+
+
+<!--  template
+<table class="tablecontent1">
+	<tr class="headertablecontent1">
+		<th colspan="2">
+			<p> SKILLS </p>
+		</th>
+	</tr>
+	<tr >
+		<td class="content1">
+			<img src="accomplishments.jpg" alt="accomplishments picture" style = "width:250px;height:300px; padding:2em 5em; float:left; ">
+		</td>
+		
+		<td class="content2">
+		</td>
+		
+	</tr>
+</table>
+
+-->
+
+
+<table class="tablecontent5">
+	<tr class="header1">
+		<th colspan="3">
+			<p> CONTACT INFORMATION</p>
+		</th>
+	</tr>
+	<tr >
+	
+		<td class="content1">
+			<!--<img src="contact.jpg" alt="contact picture" style = "width:250px; height:300px; padding:2em 5em; float:left; "> -->
+		</td>
+	
+		<td class="content2">
+		
+		<form id="frmContact" action="mailto:dianapappe@hotmail.com" method="post">
+		
+			<fieldset>
+				<legend>Title</legend>
+				<p>
+				<input type="radio" name="rdbMr" value="Mr"> Mr  
+				<input type="radio" name="rdbMrs" value="Mrs"> Mrs  
+				<input type="radio" name="rdbMs" value="Ms"> Ms
+				</p>
+			</fieldset>	
+				
+			<fieldset>
+				<legend> Best way to contact you </legend>
+
+				<fieldset>
+					<legend><input type = "checkbox" name="chkEmail" value="Email" > Email</legend>
+					<p>
+						<label>Enter your Email</label>
+						<input type="email" name="txtEmail" value="">
+					</p>
+				</fieldset>
+			
+				<fieldset>
+					<legend><input type="checkbox" name="chkPhone" value = "Phone" >Phone Number</legend>
+					<p>
+						<label > Enter your phone #</label>
+						<input type="tel" name="txtTel" value="" maxlength="12">
+					</p>
+				
+					<p>
+						<label>What time is better to call you? </label>
+						<select name="cmbTime" >
+							<option value="am">Morning</option>
+							<option value="pm">Afternoon</option>
+						</select>
+					</p>
+				</fieldset>
+			</fieldset>
+			
+			<fieldset>
+				<legend>Best way to contact me</legend>
+				<p>
+					<label>Subject: </label> <input type="text" name="txtSubject" maxlength="50" />
+				</p>
+				
+				<p>
+					<label>Attach file:
+					<input type="file" name="iFile" ></label>
+				</p>
+				
+				<p>
+					<label> Message: 
+					<br>
+					<textarea name="txtMessage" rows="5" cols="50" maxlength="60" placeholder="No more than 150 characters long."></textarea>
+					</label>
+				</p>
+			</fieldset>
+
+			<input type="hidden" name="myInfo" value="5205 Colonial Dr.Flower Mound, TX. 75028(972)966-9579">
+			
+			<p>
+				<input type="submit" > <input type="reset" value="Reset" >
+			</p>
+		</form>
+		<!--
+			<p>
+				5205 Colonial Dr. <br>
+				Flower Mound, TX. 75028 <br>
+				(972)966-9579 <br>
+				<a href="mailto:dianapappe@hotmail.com">dianapappe@hotmail.com</a>
+			</p>
+		-->
+		</td>
+		<td class="content3">
+			<!--<img src="contact.jpg" alt="contact picture" style = "width:250px; height:300px; padding:2em 5em; float:left; "> -->
+		</td>
+
+	</tr>
+</table>
+
+
+<footer>Copyright © 2015 Diana Pappe</footer>
+</body>
+</html>
